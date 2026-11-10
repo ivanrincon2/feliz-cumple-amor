@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    color: #ad1457;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    color: #6a1b9a;
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 2px solid #f8bbd0 !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(106, 27, 154, 0.2) !important;
+}
+
+/* .card img {
+    height: 350px;
+    width: 100%;
+    object-fit: contain;
+    background-color: #fff0f3;
+} */
+
+.card-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #4a148c;
+}
+
+#btnSorpresa {
+    background: linear-gradient(135deg, #c2185b 0%, #7b1fa2 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#btnSorpresa:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+#mensajeSorpresa {
+    background-color: #f3e5f5;
+    border: 1px dashed #ab47bc;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #4a148c;
+}
+
+.sobre-container {
+    background-color: #ffffff;
+    border: 2px dashed #ab47bc;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(106, 27, 154, 0.1);
+}
+
+.icono-sobre {
+    font-size: 3rem;
+}
+
+#btnAbrirSobre {
+    background-color: #ab47bc;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+#btnAbrirSobre:hover {
+    background-color: #7b1fa2;
+}
+
+.carta-texto {
+    background-color: #fff0f3;
+    border-radius: 10px;
+    border-left: 4px solid #c2185b;
+    text-align: left;
+    color: #4a148c;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Animación de desvanecimiento al hacer scroll */
+.tarjeta-animada {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.tarjeta-animada.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Estilo para el botón de la canción en la carta */
+.btn-cancion {
+    display: inline-block;
+    background: linear-gradient(135deg, #c2185b 0%, #7b1fa2 100%);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(194, 24, 91, 0.2);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-cancion:hover {
+    opacity: 0.95;
+    transform: scale(1.05);
+    color: #ffffff;
+}

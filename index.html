@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Mi Amor!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <div id="reproductorYouTube" style="display: none;">
+        <iframe width="1" height="1" src="https://www.youtube.com/embed/2gLL7HCl_Yk?autoplay=1&loop=1&playlist=2gLL7HCl_Yk" title="YouTube video player" frameborder="0" allow="autoplay"></iframe>
+    </div>
+
+    <header class="container text-center py-5">
+        <h1 class="display-4 fw-bold">¡Feliz Cumpleaños, Mi Vida! ♥</h1>
+        <p class="lead text-muted">Esta pequeña sorpresa la hice con todo mi amor para ti.</p>
+        <button id="btnSorpresa" class="btn btn-lg mt-3">¡Haz clic para una sorpresa!</button>
+        <div id="mensajeSorpresa" class="mt-4 fs-5 text-dark fw-semibold" style="display: none;">
+             Eres lo más bonito que me ha pasado. ¡Que cumplas muchos años más a mi lado! 
+        </div>
+        <div id="contenedorMusica" style="display: none;"></div>
+    </header>
+
+    <main class="container my-5">
+        <h2 id="tituloSeccion" class="text-center mb-5" style="display: none;">Nuestros Momentos Favoritos 📸</h2>
+        
+        <div id="seccionFotos" style="display: none;" class="row justify-content-center">
+            
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto1.jpg" class="card-img-top rounded" alt="Foto 1">
+                    <div class="card-body text-center">
+                        <p class="card-text">Mi foto favorita de los dos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto2.jpg" class="card-img-top rounded" alt="Foto 2">
+                    <div class="card-body text-center">
+                        <p class="card-text">Celebraste mi cumpleaños con tanto amor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto3.jpg" class="card-img-top rounded" alt="Foto 3">
+                    <div class="card-body text-center">
+                        <p class="card-text">Disfrazarme contigo me da mucha alegría.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto4.jpg" class="card-img-top rounded" alt="Foto 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Que no falte la comida y probar nuevos lugares.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto5.jpg" class="card-img-top rounded" alt="Foto 5">
+                    <div class="card-body text-center">
+                        <p class="card-text">Viajamos algo lejos, juntos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto6.jpg" class="card-img-top rounded" alt="Foto 6">
+                    <div class="card-body text-center">
+                        <p class="card-text">Tus caritas me encantan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto7.jpg" class="card-img-top rounded" alt="Foto 7">
+                    <div class="card-body text-center">
+                        <p class="card-text">El viaje con la familia a Villeta, simplemente perfecto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto8.jpg" class="card-img-top rounded" alt="Foto 8">
+                    <div class="card-body text-center">
+                        <p class="card-text">Haciendo locuras juntos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto9.jpg" class="card-img-top rounded" alt="Foto 9">
+                    <div class="card-body text-center">
+                        <p class="card-text">Simplemente somos lindos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 mb-4 tarjeta-animada">
+                <div class="card shadow-sm border-0">
+                    <img src="foto10.jpg" class="card-img-top rounded" alt="Foto 10">
+                    <div class="card-body text-center">
+                        <p class="card-text">Por muchos más años juntos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="seccionSobre" class="row justify-content-center mt-5" style="display: none;">
+            <div class="col-lg-6 col-md-8 tarjeta-animada">
+                <div class="sobre-container text-center p-4">
+                    <div class="icono-sobre mb-3">💌</div>
+                    <h3 class="mb-3">Una cartita especial para ti</h3>
+                    <button id="btnAbrirSobre" class="btn btn-sm mb-3">Abrir sobre</button>
+                    <div id="contenidoCarta" class="carta-texto p-4 mt-3" style="display: none;">
+                        <p>Mi amor,</p>
+                        <p>Te amo con todo mi corazón. Gracias por cada sonrisa, por cada momento a tu lado y por llenar mis días de tanta alegría.</p>
+                        <p>Deseo con el alma que sigas cumpliendo muchísimos años más, y que la vida me permita celebrarlos siempre a tu lado.</p>
+                        <p class="fw-bold mt-3">¡Feliz cumpleaños! Te amo tutu</p>
+                        <div class="text-center mt-4">
+                            <a href="https://open.spotify.com/intl-es/track/55BVGdzYkXx51xxMKsScgr?si=d6eed3299c354588" target="_blank" class="btn-cancion">
+                                Escucha nuestra canción aquí 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
