@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
     color: #333;
     min-height: 100vh;
@@ -11,13 +11,17 @@ header {
 }
 
 h1 {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
     color: #ad1457;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 h2, h3 {
+    font-family: 'Quicksand', sans-serif;
     color: #6a1b9a;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .card {
@@ -40,28 +44,33 @@ h2, h3 {
     background-color: #fff0f3;
 } */
 
+/* Texto de las fotos con Sniglet gordita y legible */
 .card-text {
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-family: 'Sniglet', cursive;
+    font-weight: 400;
+    font-size: 1.3rem;
     color: #4a148c;
 }
 
+/* Botón principal de la sorpresa */
 #btnSorpresa {
+    font-family: 'Sniglet', cursive;
+    font-size: 1.5rem;
     background: linear-gradient(135deg, #c2185b 0%, #7b1fa2 100%);
     border: none;
     border-radius: 50px;
-    padding: 12px 30px;
-    font-weight: 600;
+    padding: 10px 30px;
+    font-weight: 400;
     color: #ffffff;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
 #btnSorpresa:hover {
     opacity: 0.9;
     transform: scale(1.05);
 }
 
 #mensajeSorpresa {
+    font-family: 'Quicksand', sans-serif;
     background-color: #f3e5f5;
     border: 1px dashed #ab47bc;
     border-radius: 10px;
@@ -69,8 +78,10 @@ h2, h3 {
     max-width: 600px;
     margin: 20px auto;
     color: #4a148c;
+    font-weight: 600;
 }
 
+/* Estilos para el sobre y la carta final */
 .sobre-container {
     background-color: #ffffff;
     border: 2px dashed #ab47bc;
@@ -82,13 +93,16 @@ h2, h3 {
     font-size: 3rem;
 }
 
+/* Botón de abrir sobre */
 #btnAbrirSobre {
+    font-family: 'Sniglet', cursive;
+    font-size: 1.2rem;
     background-color: #ab47bc;
     border: none;
     border-radius: 20px;
-    padding: 8px 20px;
+    padding: 6px 20px;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     transition: background-color 0.2s ease;
 }
 
@@ -97,13 +111,36 @@ h2, h3 {
 }
 
 .carta-texto {
+    font-family: 'Quicksand', sans-serif;
     background-color: #fff0f3;
     border-radius: 10px;
     border-left: 4px solid #c2185b;
     text-align: left;
     color: #4a148c;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    font-weight: 600;
+}
+
+/* Botón de la canción */
+.btn-cancion {
+    font-family: 'Sniglet', cursive;
+    font-size: 1.3rem;
+    display: inline-block;
+    background: linear-gradient(135deg, #c2185b 0%, #7b1fa2 100%);
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 4px 10px rgba(194, 24, 91, 0.2);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-cancion:hover {
+    opacity: 0.95;
+    transform: scale(1.05);
+    color: #ffffff;
 }
 
 /* Animación de desvanecimiento al hacer scroll */
@@ -116,22 +153,4 @@ h2, h3 {
 .tarjeta-animada.visible {
     opacity: 1;
     transform: translateY(0);
-}
-/* Estilo para el botón de la canción en la carta */
-.btn-cancion {
-    display: inline-block;
-    background: linear-gradient(135deg, #c2185b 0%, #7b1fa2 100%);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(194, 24, 91, 0.2);
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.btn-cancion:hover {
-    opacity: 0.95;
-    transform: scale(1.05);
-    color: #ffffff;
 }
